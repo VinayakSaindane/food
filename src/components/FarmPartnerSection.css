@@ -1,0 +1,152 @@
+/* General Section Styling */
+.farm-partners-section {
+    padding: 80px 20px; /* Adjust padding as needed */
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for the section */
+    font-family: 'Arial', sans-serif; /* A more common sans-serif for body text */
+  }
+  
+  .container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Inner padding */
+  }
+  
+  .section-title {
+    font-family: 'Georgia', serif; /* Matching the font from the image */
+    font-size: 2.5em;
+    color: #557A46; /* A deep green color, matching the image */
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  /* Farm Cards Grid */
+  .farm-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+    margin-bottom: 60px;
+    justify-content: center; /* Center cards if they don't fill the row */
+  }
+  
+  /* Farm Card Styling */
+  .farm-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    overflow: hidden; /* Ensures image corners are rounded with card */
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .farm-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .farm-card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+  }
+  
+  .farm-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Covers the area, cropping if necessary */
+    display: block;
+  }
+  
+  .farm-card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows content to push footer down, useful for cards with varying text length */
+  }
+  
+  .farm-name {
+    font-size: 1.6em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .farm-location-info {
+    font-size: 0.95em;
+    color: #777;
+    margin-bottom: 15px;
+    display: flex; /* For aligning icon and text */
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+  }
+  
+  .icon-pin {
+      color: #557A46; /* Color for the pin icon, matching title */
+  }
+  
+  
+  .farm-description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    flex-grow: 1; /* Allows description to take up available space */
+  }
+  
+  /* Get in Touch Button */
+  .get-in-touch-wrapper {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .get-in-touch-button {
+    background-color: #557A46; /* Matching the green from the title */
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* In case it becomes a link */
+    display: inline-block; /* Allows padding and transitions */
+  }
+  
+  .get-in-touch-button:hover {
+    background-color: #4A6A3F; /* Slightly darker green on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .farm-cards-grid {
+      grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+  
+    .section-title {
+      font-size: 2em;
+    }
+  
+    .section-description {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .farm-partners-section {
+      padding: 50px 15px;
+    }
+  
+    .get-in-touch-button {
+      padding: 12px 25px;
+      font-size: 1em;
+    }
+  }

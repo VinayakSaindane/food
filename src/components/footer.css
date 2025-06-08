@@ -1,0 +1,187 @@
+/* src/components/footer.css */
+.main-footer {
+  background-color: #6a6258; /* Dark brown/grey background color from image */
+  color: #d1cbc2; /* Light text color for contrast */
+  padding: 60px 40px 20px 40px; /* Top, right, bottom, left padding */
+  font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 50px auto; /* Center content and add bottom margin */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  gap: 30px; /* Space between columns */
+}
+
+.footer-col {
+  flex: 1; /* Each column takes equal flexible space */
+  min-width: 220px; /* Minimum width for each column before wrapping */
+  text-align: left;
+}
+
+/* Company Info Column */
+.company-info-col {
+  min-width: 300px; /* Make company info column a bit wider */
+}
+
+.company-logo-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f7d69b; /* Orange-yellow color for the circle */
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 15px;
+  /* You could put a background image here if you have a square logo */
+}
+
+.footer-company-name {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  color: #f7d69b; /* Orange-yellow for company name */
+  font-weight: bold;
+}
+
+.company-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #c0b8ad; /* Slightly darker light text */
+}
+
+.social-icons a {
+  color: #f7d69b; /* Orange-yellow for icons */
+  font-size: 1.2rem;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: white; /* White on hover */
+}
+
+/* Quick Links, Services, Contact Us Columns */
+.footer-col h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  color: white; /* White for headings */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #c0b8ad;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Contact Us specific styling */
+.contact-us ul li .icon-text-wrapper {
+  display: flex;
+  align-items: flex-start; /* Align icon to top of text if text wraps */
+  color: #c0b8ad; /* Keep text consistent */
+}
+
+.contact-us ul li .contact-icon {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  line-height: 1.4; /* Adjust to align with text */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white line */
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping */
+  font-size: 0.85rem;
+  color: #c0b8ad;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-legal-links a {
+  color: #c0b8ad;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .footer-content {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center;
+    text-align: center; /* Center text for stacked columns */
+  }
+
+  .footer-col {
+    min-width: unset; /* Remove min-width to allow full width on small screens */
+    width: 100%;
+    margin-bottom: 30px; /* Add space between stacked columns */
+  }
+
+  .company-logo-name {
+    justify-content: center; /* Center logo and name */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Stack copyright and legal links */
+    gap: 10px;
+  }
+
+  .footer-legal-links {
+    margin-top: 10px; /* Space between links and copyright */
+  }
+
+  .footer-legal-links a {
+    margin: 0 10px; /* Adjust spacing for stacked links */
+  }
+}
+
+@media (max-width: 576px) {
+  .main-footer {
+    padding: 40px 20px 15px 20px;
+  }
+
+  .footer-content {
+    gap: 20px;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+}

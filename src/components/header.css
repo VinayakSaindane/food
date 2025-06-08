@@ -1,0 +1,69 @@
+/* src/components/header.css */
+.header {
+  background-color: #edece9; /* A light, off-white background based on the image */
+  padding: 10px 40px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  /* If the image was providing some spacing, you might need to adjust here.
+     For now, we'll assume service-name itself will manage its spacing. */
+}
+
+/* No .logo styling needed as the image is removed */
+
+.service-name {
+  font-family: 'Georgia', serif; /* Or a similar elegant font if you have one */
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #5b6e4e; /* A darker green/brown similar to the logo and button */
+  font-weight: bold;
+  /* If the logo was to the left and service-name looked cramped,
+     you might add a small margin-left here if header-left is not enough.
+     e.g., margin-left: 0px; (default, just for clarity) */
+}
+
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header-nav li {
+  margin-left: 30px; /* Space between navigation items */
+}
+
+.header-nav a {
+  color: #333; /* Dark text color for links */
+  text-decoration: none;
+  font-weight: 500; /* Slightly bolder than normal text */
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #5b6e4e; /* Change color on hover to match brand */
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+
+.get-quote-button {
+  background-color: #5b6e4e; /* Dark green background */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-quote-button:hover {
+  background-color: #4a5c3d; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
